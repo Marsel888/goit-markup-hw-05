@@ -131,6 +131,7 @@ p {
 .mail-tel {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+  fill: #757575;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -261,18 +262,11 @@ p {
 
 }
 
-.icon-nav::before{
 
-fill: var(--main-color);
-  
-  
-  
-  
-}
 
 .icon-nav{
-  display: inline-block;
   padding-right: 10px; 
+  
 
   
 }
@@ -291,6 +285,7 @@ fill: var(--main-color);
 
 .icon-a{
   padding-right: 10px;
+  justify-content: center;
 
 }
 .icon-a:last-child{
@@ -304,6 +299,7 @@ fill: var(--main-color);
     /* width: 44px;
     height: 44px; */
   background-color: #ffffff;
+  fill: #AFB1B8;
 
   
   border-radius: 50%;
@@ -317,7 +313,7 @@ fill: var(--main-color);
   
 }
 .svg-icon-net{
-  fill: #AFB1B8;
+ 
 
 
   width: 20px;
@@ -327,7 +323,13 @@ fill: var(--main-color);
  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.svg-icon-net:hover{
+.svg-icon-net:hover,
+.svg-icon-net:focus
+{
+  fill: white;
+}
+
+.svg-icon-net:focus{
   fill: white;
 }
 .backdrop{
@@ -368,7 +370,14 @@ pointer-events: none;
   height: 30px;
 
 }
-.icon-li:hover,
+.icon-li:hover{
+  background-color: var(--akcent-color);
+  
+
+
+}
+
+
 .icon-li:focus{
   background-color: var(--akcent-color);
   fill: #FFFFFF;
@@ -544,6 +553,7 @@ background-image: url(../images/antenna.png);}
 .ul-flex-footer{
   display: flex;
   padding-top: 20px;
+  
 }
 .section-number-four{
   padding-bottom: 94px;
@@ -557,13 +567,20 @@ footer {
   background: #2f303a;
 
 }
+.a-footer{
+  display:flex ;
+  justify-content: center;
+  align-items: center;
 
+  
+}
 
 .svg-icon-fooret{
   width: 20px;
   height: 20px;
   fill: var(--background-color-buttom);
  padding: 10px;
+ 
 }
 .a-footer:focus 
 {
@@ -571,6 +588,7 @@ footer {
   border-radius: 50%;
   
 }
+
 .p-footer{
   color: var(--background-color-buttom);
   font-style: normal;
@@ -585,7 +603,10 @@ letter-spacing: 0.06em;
   background-color: #43444D;
   border-radius: 50%;
   margin-right: 10px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+
+
 }
 
 
@@ -595,7 +616,7 @@ letter-spacing: 0.06em;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   bottom: 0;
-  
+
 }
 .name-ga{
   text-align: center;
@@ -608,7 +629,9 @@ letter-spacing: 0.03em;
 padding-top: 27px;
 
 }
-.li-flex-footer:hover{
+.li-flex-footer:hover,
+.li-flex-footer:focus
+{
   background-color: var(--akcent-color);
   
 }
@@ -642,6 +665,7 @@ background-color: white;
   color: var(--akcent-color);
   
 }
+
 
 .logo {
   color: var(--background-color);
@@ -695,10 +719,6 @@ address {
   color: var(--background-color);
 }
 
-/* .footer-footer{
-  padding-top: 94px;
-  padding-bottom: 60px;
-} */
 
 .li-fotter {
   margin-top: 9px;
@@ -951,3 +971,5 @@ padding-top: 20px;
 .border{
   border-bottom:1px solid #ECECEC;
 }
+
+
